@@ -1,4 +1,6 @@
-/// <reference types="vite/client" />
+// FIX: Removed the reference to "vite/client" as it was causing a "Cannot find type definition file" error.
+// The application uses `process.env` (which is made available to the client via vite.config.ts)
+// and does not use `import.meta.env`, so this reference is not necessary.
 
 // FIX: Augment the NodeJS.ProcessEnv interface to include API_KEY. This avoids
 // the "Cannot redeclare block-scoped variable 'process'" error by extending
