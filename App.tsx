@@ -577,6 +577,19 @@ export default function App() {
     const mainViewRef = useRef<HTMLDivElement>(null);
     const animationFrameId = useRef<number | null>(null);
 
+    // Register Service Worker for PWA capabilities
+    useEffect(() => {
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then(registration => {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    }, []);
+
     useEffect(() => {
         document.documentElement.lang = lang;
         document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';

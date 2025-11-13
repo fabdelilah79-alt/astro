@@ -1,10 +1,12 @@
+
 import { GoogleGenAI, Type } from "@google/genai";
 import { translations } from '../i18n/translations';
 import type { Coordinates, CelestialBodyDetails, Language, QuizQuestion, EducationContent, InitialData } from '../types';
 
-// FIX: Per @google/genai guidelines, the API key must be sourced directly from process.env.API_KEY.
-// The key is assumed to be available in the execution environment.
+// Per @google/genai guidelines, the API key is sourced from process.env.API_KEY
+// and is assumed to be available in the execution context.
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -39,11 +41,7 @@ async function getCachedOrFetch<T>(cacheKey: string, fetchFn: () => Promise<T | 
 
 
 async function generateJson<T,>(prompt: string, schema: any, maxRetries = 3): Promise<T | null> {
-  // FIX: Per @google/genai guidelines, check for process.env.API_KEY.
-  if (!process.env.API_KEY) {
-    console.error("Cannot call Gemini API without an API_KEY environment variable.");
-    return null;
-  }
+  // Per Gemini API guidelines, the API key is assumed to be available, so the check is removed.
   
   let attempt = 0;
   while (attempt < maxRetries) {
@@ -162,11 +160,7 @@ export const generateCelestialBodyImage = (bodyName: string, maxRetries = 3): Pr
     const cacheKey = `celestialImage-${bodyName.replace(/\s+/g, '_').toLowerCase()}`;
 
     return getCachedOrFetch(cacheKey, async () => {
-        // FIX: Per @google/genai guidelines, check for process.env.API_KEY.
-        if (!process.env.API_KEY) {
-            console.error("Cannot call Gemini API without an API_KEY environment variable.");
-            return null;
-        }
+        // Per Gemini API guidelines, the API key is assumed to be available, so the check is removed.
         
         let attempt = 0;
         while (attempt < maxRetries) {
