@@ -1,0 +1,7 @@
+{
+  "name": "Observatoire Astro Personnel",
+  "description": "Une application web personnalisée pour l'observation des étoiles, utilisant la géolocalisation pour fournir une carte du ciel en direct, des données météorologiques et un calendrier d'événements astronomiques générés par l'IA.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

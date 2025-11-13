@@ -1,0 +1,26 @@
+{
+  "short_name": "Astro Obs.",
+  "name": "Observatoire Astro Personnel",
+  "description": "Une application web personnalisée pour l'observation des étoiles, utilisant la géolocalisation pour fournir une carte du ciel en direct, des données météorologiques et un calendrier d'événements astronomiques générés par l'IA.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0c1427",
+  "background_color": "#000000"
+}

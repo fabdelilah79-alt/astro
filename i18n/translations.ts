@@ -1,0 +1,76 @@
+export const translations = {
+  ui: {
+    title: { fr: 'Observatoire Astro Personnel', en: 'Personal Astro Observatory', es: 'Observatorio Astro Personal', de: 'Persönliches Astro-Observatorium', ar: 'مرصد الفلك الشخصي', zh: '个人天文台' },
+    findLocation: { fr: 'Trouver ma position', en: 'Find my position', es: 'Encontrar mi posición', de: 'Meine Position finden', ar: 'ابحث عن موقعي', zh: '找到我的位置' },
+    manualEntry: { fr: 'Ou entrez les coordonnées manuellement', en: 'Or enter coordinates manually', es: 'O ingrese las coordenadas manualmente', de: 'Oder Koordinaten manuell eingeben', ar: 'أو أدخل الإحداثيات يدويًا', zh: '或手动输入坐标' },
+    latitude: { fr: 'Latitude', en: 'Latitude', es: 'Latitud', de: 'Breitengrad', ar: 'خط العرض', zh: '纬度' },
+    longitude: { fr: 'Longitude', en: 'Longitude', es: 'Longitud', de: 'Längengrad', ar: 'خط الطول', zh: '经度' },
+    submit: { fr: 'Soumettre', en: 'Submit', es: 'Enviar', de: 'Senden', ar: 'إرسال', zh: '提交' },
+    locationPanelTitle: { fr: 'Localisation', en: 'Location', es: 'Ubicación', de: 'Standort', ar: 'الموقع', zh: '地点' },
+    weatherPanelTitle: { fr: 'Météo Locale', en: 'Local Weather', es: 'Clima Local', de: 'Lokales Wetter', ar: 'الطقس المحلي', zh: '当地天气' },
+    eventsPanelTitle: { fr: 'Événements à Venir', en: 'Upcoming Events', es: 'Próximos Eventos', de: 'Kommende Veranstaltungen', ar: 'الأحداث القادمة', zh: '即将举行的活动' },
+    loading: { fr: 'Chargement...', en: 'Loading...', es: 'Cargando...', de: 'Wird geladen...', ar: 'جار التحميل...', zh: '加载中...' },
+    error: { fr: 'Une erreur est survenue.', en: 'An error occurred.', es: 'Ocurrió un error.', de: 'Ein Fehler ist aufgetreten.', ar: 'حدث خطأ.', zh: '发生错误。' },
+    humidity: { fr: 'Humidité', en: 'Humidity', es: 'Humedad', de: 'Luftfeuchtigkeit', ar: 'الرطوبة', zh: '湿度' },
+    wind: { fr: 'Vent', en: 'Wind', es: 'Viento', de: 'Wind', ar: 'الرياح', zh: '风速' },
+    characteristics: { fr: 'Caractéristiques', en: 'Characteristics', es: 'Características', de: 'Eigenschaften', ar: 'الخصائص', zh: '特征' },
+    funFacts: { fr: 'Faits Amusants', en: 'Fun Facts', es: 'Datos Curiosos', de: 'Wissenswertes', ar: 'حقائق ممتعة', zh: '有趣的事实' },
+    close: { fr: 'Fermer', en: 'Close', es: 'Cerrar', de: 'Schließen', ar: 'إغلاق', zh: '关闭' },
+    now: { fr: 'Maintenant', en: 'Now', es: 'Ahora', de: 'Jetzt', ar: 'الآن', zh: '现在' },
+    play: { fr: 'Jouer', en: 'Play', es: 'Reproducir', de: 'Abspielen', ar: 'تشغيل', zh: '播放' },
+    pause: { fr: 'Pause', en: 'Pause', es: 'Pausa', de: 'Pause', ar: 'إيقاف مؤقت', zh: '暂停' },
+    toggleInfo: { fr: 'Afficher les informations', en: 'Show Information', es: 'Mostrar información', de: 'Informationen anzeigen', ar: 'إظهار المعلومات', zh: '显示信息' },
+    north: { fr: 'N', en: 'N', es: 'N', de: 'N', ar: 'ش', zh: '北' },
+    east: { fr: 'E', en: 'E', es: 'E', de: 'O', ar: 'ق', zh: '东' },
+    south: { fr: 'S', en: 'S', es: 'S', de: 'S', ar: 'ج', zh: '南' },
+    west: { fr: 'W', en: 'W', es: 'O', de: 'W', ar: 'غ', zh: '西' },
+    observatory: { fr: 'Observatoire', en: 'Observatory', es: 'Observatorio', de: 'Observatorium', ar: 'المرصد', zh: '天文台' },
+    education: { fr: 'Éducation', en: 'Education', es: 'Educación', de: 'Bildung', ar: 'تعليم', zh: '教育' },
+    quiz: { fr: 'Quiz', en: 'Quiz', es: 'Prueba', de: 'Quiz', ar: 'اختبار', zh: '测验' },
+    selectTopic: { fr: 'Sélectionnez un sujet pour commencer', en: 'Select a topic to begin', es: 'Seleccione un tema para comenzar', de: 'Wählen Sie ein Thema, um zu beginnen', ar: 'اختر موضوعًا للبدء', zh: '请选择一个主题开始' },
+    startQuiz: { fr: 'Commencer le Quiz', en: 'Start Quiz', es: 'Empezar la Prueba', de: 'Quiz starten', ar: 'ابدأ الاختبار', zh: '开始测验' },
+    nextQuestion: { fr: 'Question Suivante', en: 'Next Question', es: 'Siguiente Pregunta', de: 'Nächste Frage', ar: 'السؤال التالي', zh: '下一题' },
+    submitAnswer: { fr: 'Soumettre', en: 'Submit Answer', es: 'Enviar Respuesta', de: 'Antwort abschicken', ar: 'إرسال الإجابة', zh: '提交答案' },
+    correct: { fr: 'Correct !', en: 'Correct!', es: '¡Correcto!', de: 'Richtig!', ar: 'صحيح!', zh: '正确！' },
+    incorrect: { fr: 'Incorrect.', en: 'Incorrect.', es: 'Incorrecto.', de: 'Falsch.', ar: 'غير صحيح.', zh: '错误。' },
+    yourScore: { fr: 'Votre Score', en: 'Your Score', es: 'Tu Puntuación', de: 'Deine Punktzahl', ar: 'نتيجتك', zh: '你的分数' },
+    playAgain: { fr: 'Rejouer', en: 'Play Again', es: 'Jugar de Nuevo', de: 'Nochmal spielen', ar: 'العب مرة أخرى', zh: '再玩一次' },
+    keyConcepts: { fr: 'Concepts Clés', en: 'Key Concepts', es: 'Conceptos Clave', de: 'Schlüsselkonzepte', ar: 'المفاهيم الرئيسية', zh: '关键概念' },
+    backToTopics: { fr: 'Retour aux sujets', en: 'Back to topics', es: 'Volver a los temas', de: 'Zurück zu den Themen', ar: 'العودة إلى المواضيع', zh: '返回主题' },
+  },
+  celestialBodyNames: {
+    sun: { fr: 'Soleil', en: 'Sun', es: 'Sol', de: 'Sonne', ar: 'الشمس', zh: '太阳' },
+    mercury: { fr: 'Mercure', en: 'Mercury', es: 'Mercurio', de: 'Merkur', ar: 'عطارد', zh: '水星' },
+    venus: { fr: 'Vénus', en: 'Venus', es: 'Venus', de: 'Venus', ar: 'الزهرة', zh: '金星' },
+    moon: { fr: 'Lune', en: 'Moon', es: 'Luna', de: 'Mond', ar: 'القمر', zh: '月亮' },
+    mars: { fr: 'Mars', en: 'Mars', es: 'Marte', de: 'Mars', ar: 'المريخ', zh: '火星' },
+    jupiter: { fr: 'Jupiter', en: 'Jupiter', es: 'Júpiter', de: 'Jupiter', ar: 'المشتري', zh: '木星' },
+    saturn: { fr: 'Saturne', en: 'Saturn', es: 'Saturno', de: 'Saturn', ar: 'زحل', zh: '土星' },
+    polaris: { fr: 'Étoile Polaire', en: 'Polaris', es: 'Polaris', de: 'Polarstern', ar: 'نجم الشمال', zh: '北极星' },
+  },
+  educationTopics: {
+    solarSystem: { fr: 'Le Système Solaire', en: 'The Solar System', es: 'El Sistema Solar', de: 'Das Sonnensystem', ar: 'النظام الشمسي', zh: '太阳系' },
+    starsAndGalaxies: { fr: 'Étoiles et Galaxies', en: 'Stars and Galaxies', es: 'Estrellas y Galaxias', de: 'Sterne und Galaxien', ar: 'النجوم والمجرات', zh: '恒星与星系' },
+    spaceExploration: { fr: 'Exploration Spatiale', en: 'Space Exploration', es: 'Exploración Espacial', de: 'Raumfahrt', ar: 'استكشاف الفضاء', zh: '太空探索' },
+  },
+  educationSummaries: {
+    solarSystem: { fr: 'Découvrez les planètes, les lunes et les merveilles de notre système solaire.', en: 'Learn about the planets, moons, and wonders of our solar system.', es: 'Aprenda sobre los planetas, lunas y maravillas de nuestro sistema solar.', de: 'Erfahren Sie mehr über die Planeten, Monde und Wunder unseres Sonnensystems.', ar: 'تعرف على الكواكب والأقمار وعجائب نظامنا الشمسي.', zh: '了解我们太阳系中的行星、卫星和奇观。' },
+    starsAndGalaxies: { fr: 'Voyagez au-delà, vers la naissance et la mort des étoiles et les vastes galaxies.', en: 'Journey beyond, to the birth and death of stars and the vastness of galaxies.', es: 'Viaje más allá, al nacimiento y muerte de las estrellas y la inmensidad de las galaxias.', de: 'Reisen Sie darüber hinaus, zur Geburt und zum Tod von Sternen und der Weite der Galaxien.', ar: 'رحلة إلى ما هو أبعد، إلى ولادة وموت النجوم واتساع المجرات.', zh: '超越之旅，探索恒星的诞生与死亡以及广阔的星系。' },
+    spaceExploration: { fr: "Revivez l'histoire des missions qui ont emmené l'humanité vers les étoiles.", en: "Relive the history of the missions that took humanity to the stars.", es: "Reviva la historia de las misiones que llevaron a la humanidad a las estrellas.", de: "Erleben Sie die Geschichte der Missionen, die die die Menschheit zu den Sternen brachten.", ar: 'استرجع تاريخ البعثات التي أخذت البشرية إلى النجوم.', zh: '重温将人类带向星空的历史使命。' },
+  },
+  prompts: {
+    initialData: (lat: number, lon: number, lang: string, date: Date) => `For the location at latitude ${lat} and longitude ${lon}, provide the following information in the language with code '${lang}'. Respond in this exact JSON format: 
+{
+  "location": {"city": "...", "country": "..."},
+  "weather": {"temperatureCelsius": number, "condition": "...", "humidityPercent": number, "windSpeedKmh": number},
+  "events": [
+    {"name": "...", "date": "YYYY-MM-DD", "description": "A brief, exciting one-sentence description."}
+  ]
+}
+The "events" array should contain the top 4 upcoming astronomical events for the next 3 months, starting from today's date: ${date.toISOString().split('T')[0]}. All text values must be in the requested language.`,
+    celestialInfo: (bodyName: string, lang: string) => `Provide detailed, engaging information about the celestial body "${bodyName}" for an amateur astronomer. Respond in the language with code '${lang}'. The response must be a JSON object with this exact structure: {"name": "...", "type": "...", "description": "A detailed and captivating paragraph of at least 60 words.", "characteristics": [{"label": "...", "value": "..."}, {"label": "...", "value": "..."}, {"label": "...", "value": "..."}], "funFacts": ["...", "..."]}. Include at least 3 characteristics like 'Diameter' or 'Distance from Earth', and 2 fun facts.`,
+    celestialImage: (bodyName: string) => `A single, photorealistic, high-quality, centered image of the celestial body "${bodyName}" as seen from space. No text, labels, or other objects. Just the celestial body against the blackness of space.`,
+    educationContent: (topic: string, lang: string) => `Generate an educational article for an amateur astronomer about "${topic}". The language must be '${lang}'. The response must be a JSON object with this exact structure: {"title": "...", "paragraphs": ["...", "...", "..."], "keyConcepts": [{"concept": "...", "explanation": "..."}, {"concept": "...", "explanation": "..."}]}. The article should have at least 3 paragraphs and 2 key concepts with brief explanations. The tone should be engaging and easy to understand.`,
+    quiz: (topic: string, lang: string) => `Generate a 5-question multiple-choice quiz about "${topic}". The language must be '${lang}'. The response must be a JSON array with this exact structure: [{"question": "...", "options": ["...", "...", "...", "..."], "correctAnswer": "...", "explanation": "A brief explanation of why the answer is correct."}]. Each question must have exactly 4 options. The "correctAnswer" must be one of the strings from the "options" array.`,
+  }
+};
