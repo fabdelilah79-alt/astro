@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- PWA Manifest & Theme -->
@@ -17,13 +17,15 @@
 
     <title>Observatoire Astro Personnel</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+    "vite": "https://aistudiocdn.com/vite@^7.2.2",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
   }
 }
 </script>

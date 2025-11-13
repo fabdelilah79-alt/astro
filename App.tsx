@@ -578,18 +578,6 @@ export default function App() {
     const animationFrameId = useRef<number | null>(null);
 
     useEffect(() => {
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').then(registration => {
-                    console.log('SW registered: ', registration);
-                }).catch(registrationError => {
-                    console.log('SW registration failed: ', registrationError);
-                });
-            });
-        }
-    }, []);
-
-    useEffect(() => {
         document.documentElement.lang = lang;
         document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     }, [lang]);

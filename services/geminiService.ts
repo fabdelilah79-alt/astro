@@ -2,12 +2,9 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { translations } from '../i18n/translations';
 import type { Coordinates, CelestialBodyDetails, Language, QuizQuestion, EducationContent, InitialData } from '../types';
 
-const API_KEY = process.env.API_KEY;
-if (!API_KEY) {
-  // This is a fallback for development; in production, the key should be set.
-  console.warn("API_KEY environment variable not set.");
-}
-const ai = new GoogleGenAI({ apiKey: API_KEY || "" });
+// FIX: Per @google/genai guidelines, the API key must be sourced directly from process.env.API_KEY.
+// The key is assumed to be available in the execution environment.
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -42,8 +39,9 @@ async function getCachedOrFetch<T>(cacheKey: string, fetchFn: () => Promise<T | 
 
 
 async function generateJson<T,>(prompt: string, schema: any, maxRetries = 3): Promise<T | null> {
-  if (!API_KEY) {
-    console.error("Cannot call Gemini API without an API_KEY.");
+  // FIX: Per @google/genai guidelines, check for process.env.API_KEY.
+  if (!process.env.API_KEY) {
+    console.error("Cannot call Gemini API without an API_KEY environment variable.");
     return null;
   }
   
@@ -164,8 +162,9 @@ export const generateCelestialBodyImage = (bodyName: string, maxRetries = 3): Pr
     const cacheKey = `celestialImage-${bodyName.replace(/\s+/g, '_').toLowerCase()}`;
 
     return getCachedOrFetch(cacheKey, async () => {
-        if (!API_KEY) {
-            console.error("Cannot call Gemini API without an API_KEY.");
+        // FIX: Per @google/genai guidelines, check for process.env.API_KEY.
+        if (!process.env.API_KEY) {
+            console.error("Cannot call Gemini API without an API_KEY environment variable.");
             return null;
         }
         
